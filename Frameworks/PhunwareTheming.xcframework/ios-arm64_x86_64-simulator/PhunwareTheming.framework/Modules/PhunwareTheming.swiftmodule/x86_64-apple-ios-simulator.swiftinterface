@@ -1,0 +1,75 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PhunwareTheming
+import Foundation
+@_exported import PhunwareTheming
+import Swift
+import UIKit
+import _Concurrency
+@objc final public class ImageConfiguration : NSObject {
+  final public let image: UIImage
+  final public let backgroundColor: UIColor?
+  final public let tintColor: UIColor?
+  public init(image: UIImage, backgroundColor: UIColor?, tintColor: UIColor?)
+  @objc deinit
+}
+extension UIImageView {
+  @_Concurrency.MainActor(unsafe) public func configure(_ configuration: ImageConfiguration)
+}
+public struct TextStyles {
+  public let headline1: UIFont
+  public let headline2: UIFont
+  public let headline3: UIFont
+  public let subtitle1: UIFont
+  public let subtitle2: UIFont
+  public let body1: UIFont
+  public let body2: UIFont
+  public let overline: UIFont
+  public let caption: UIFont
+  public let button: UIFont
+  public init(headline1: UIFont, headline2: UIFont, headline3: UIFont, subtitle1: UIFont, subtitle2: UIFont, body1: UIFont, body2: UIFont, overline: UIFont, caption: UIFont, button: UIFont)
+}
+public struct ColorPalette {
+  public let primary: UIColor
+  public let secondary: UIColor
+  public let primaryVariant: UIColor
+  public let secondaryVariant: UIColor
+  public let background: UIColor
+  public let surface: UIColor
+  public let onPrimary: UIColor
+  public let onSecondary: UIColor
+  public let onBackground: UIColor
+  public let onSurface: UIColor
+  public let error: UIColor
+  public let onError: UIColor
+  public init(primary: UIColor, secondary: UIColor, primaryVariant: UIColor, secondaryVariant: UIColor, background: UIColor, surface: UIColor, onPrimary: UIColor, onSecondary: UIColor, onBackground: UIColor, onSurface: UIColor, error: UIColor, onError: UIColor)
+}
+@objc final public class ColorConfiguration : NSObject {
+  final public let backgroundColor: UIColor?
+  final public let tintColor: UIColor?
+  public init(backgroundColor: UIColor?, tintColor: UIColor?)
+  @objc deinit
+}
+extension UIView {
+  @_Concurrency.MainActor(unsafe) public func configure(_ configuration: ColorConfiguration)
+}
+@objc final public class TextConfiguration : NSObject {
+  final public let text: String?
+  final public let attributedText: NSAttributedString?
+  final public let font: UIFont?
+  final public let foregroundColor: UIColor?
+  final public let backgroundColor: UIColor?
+  final public let tintColor: UIColor?
+  public init(text: String?, attributedText: NSAttributedString?, font: UIFont?, foregroundColor: UIColor?, backgroundColor: UIColor?, tintColor: UIColor?)
+  @objc deinit
+}
+extension UIButton {
+  @_Concurrency.MainActor(unsafe) public func configure(_ configuration: TextConfiguration)
+}
+extension UILabel {
+  @_Concurrency.MainActor(unsafe) public func configure(_ configuration: TextConfiguration)
+}
+public protocol ThemeConfiguring {
+  associatedtype Theme
+  func configureTheme() -> Theme
+}
