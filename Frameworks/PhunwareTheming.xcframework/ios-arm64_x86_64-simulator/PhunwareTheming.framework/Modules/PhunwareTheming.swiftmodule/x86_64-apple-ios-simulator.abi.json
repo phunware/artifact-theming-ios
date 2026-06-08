@@ -6,6 +6,16 @@
     "children": [
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PhunwareTheming",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -524,6 +534,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhunwareTheming",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -918,8 +938,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "PhunwareTheming",
         "declAttributes": [
@@ -1491,6 +1511,45 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "dynamicTypes",
+            "printedName": "dynamicTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TextStyles",
+                "printedName": "PhunwareTheming.TextStyles",
+                "usr": "s:15PhunwareTheming10TextStylesV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PhunwareTheming10TextStylesV12dynamicTypesACvp",
+            "mangledName": "$s15PhunwareTheming10TextStylesV12dynamicTypesACvp",
+            "moduleName": "PhunwareTheming",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TextStyles",
+                    "printedName": "PhunwareTheming.TextStyles",
+                    "usr": "s:15PhunwareTheming10TextStylesV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PhunwareTheming10TextStylesV12dynamicTypesACvg",
+                "mangledName": "$s15PhunwareTheming10TextStylesV12dynamicTypesACvg",
+                "moduleName": "PhunwareTheming",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -1799,6 +1858,50 @@
           },
           {
             "kind": "Var",
+            "name": "surfaceContainer",
+            "printedName": "surfaceContainer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PhunwareTheming12ColorPaletteV16surfaceContainerSo7UIColorCvp",
+            "mangledName": "$s15PhunwareTheming12ColorPaletteV16surfaceContainerSo7UIColorCvp",
+            "moduleName": "PhunwareTheming",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PhunwareTheming12ColorPaletteV16surfaceContainerSo7UIColorCvg",
+                "mangledName": "$s15PhunwareTheming12ColorPaletteV16surfaceContainerSo7UIColorCvg",
+                "moduleName": "PhunwareTheming",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "onPrimary",
             "printedName": "onPrimary",
             "children": [
@@ -2064,7 +2167,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(primary:secondary:primaryVariant:secondaryVariant:background:surface:onPrimary:onSecondary:onBackground:onSurface:error:onError:)",
+            "printedName": "init(primary:secondary:primaryVariant:secondaryVariant:background:surface:surfaceContainer:onPrimary:onSecondary:onBackground:onSurface:error:onError:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2112,6 +2215,13 @@
                 "kind": "TypeNominal",
                 "name": "UIColor",
                 "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
                 "usr": "c:objc(cs)UIColor"
               },
               {
@@ -2146,8 +2256,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15PhunwareTheming12ColorPaletteV7primary9secondary0E7Variant0fG010background7surface9onPrimary0J9Secondary0J10Background0J7Surface5error0J5ErrorACSo7UIColorC_A11Qtcfc",
-            "mangledName": "$s15PhunwareTheming12ColorPaletteV7primary9secondary0E7Variant0fG010background7surface9onPrimary0J9Secondary0J10Background0J7Surface5error0J5ErrorACSo7UIColorC_A11Qtcfc",
+            "usr": "s:15PhunwareTheming12ColorPaletteV7primary9secondary0E7Variant0fG010background7surface0I9Container9onPrimary0K9Secondary0K10Background0K7Surface5error0K5ErrorACSo7UIColorC_A12Rtcfc",
+            "mangledName": "$s15PhunwareTheming12ColorPaletteV7primary9secondary0E7Variant0fG010background7surface0I9Container9onPrimary0K9Secondary0K10Background0K7Surface5error0K5ErrorACSo7UIColorC_A12Rtcfc",
             "moduleName": "PhunwareTheming",
             "declAttributes": [
               "AccessControl"
@@ -3254,6 +3364,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PhunwareTheming",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -3317,6 +3437,92 @@
           "AccessControl",
           "RawDocComment"
         ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "font",
+            "printedName": "font(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP15PhunwareThemingE4fontyQrSo6UIFontCF",
+            "mangledName": "$s7SwiftUI4ViewP15PhunwareThemingE4fontyQrSo6UIFontCF",
+            "moduleName": "PhunwareTheming",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Self where Self : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUICore",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "TypeEraser",
+          "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "Custom"
+        ],
+        "isExternal": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -4092,6 +4298,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4168,6 +4381,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -4448,6 +4668,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -4532,6 +4759,31 @@
             "declKind": "Func",
             "usr": "s:So6UIFontC15PhunwareThemingE10uppercasedABXDyF",
             "mangledName": "$sSo6UIFontC15PhunwareThemingE10uppercasedABXDyF",
+            "moduleName": "PhunwareTheming",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dynamicType",
+            "printedName": "dynamicType(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TextStyle",
+                "printedName": "UIKit.UIFont.TextStyle",
+                "usr": "c:@T@UIFontTextStyle"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So6UIFontC15PhunwareThemingE11dynamicType4withABSo0A9TextStylea_tF",
+            "mangledName": "$sSo6UIFontC15PhunwareThemingE11dynamicType4withABSo0A9TextStylea_tF",
             "moduleName": "PhunwareTheming",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -4627,6 +4879,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4773,14 +5032,14 @@
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/artifact-theming-external-ios\/PhunwareTheming\/Extensions\/UIFont+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 1024,
       "length": 28,
       "value": "\"PhunwareTheming.Uppercased\""
     },
     {
       "filePath": "\/Users\/jenkins\/slave_data\/workspace\/artifact-theming-external-ios\/PhunwareTheming\/Extensions\/UIFont+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 825,
+      "offset": 1182,
       "length": 1,
       "value": "0"
     }

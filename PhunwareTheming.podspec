@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                = 'PhunwareTheming'
-  spec.version             = '1.1.0'
+  spec.version             = '1.1.2'
   spec.summary             = 'A library currently being used by Phunware internally to provide theming capabilities for view components in our own Modules.'
   spec.homepage            = 'https://www.phunware.com'
   spec.license             = { :type => 'Copyright', :text => 'Copyright 2009-present Phunware, Inc. All rights reserved.' }
@@ -9,5 +9,5 @@ Pod::Spec.new do |spec|
   spec.platform            = :ios, '15.5'
   spec.source              = { :git => 'https://github.com/phunware/artifact-theming-ios.git', :tag => spec.version.to_s }
   spec.vendored_frameworks = 'Frameworks/PhunwareTheming.xcframework'
-  spec.cocoapods_version   = '>= 1.12.0'
+  spec.cocoapods_version   = '>= 1.16.2'
 end

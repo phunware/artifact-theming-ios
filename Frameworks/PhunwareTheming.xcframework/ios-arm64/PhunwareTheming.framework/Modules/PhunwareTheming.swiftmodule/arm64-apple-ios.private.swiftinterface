@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios15.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PhunwareTheming
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios15.5 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PhunwareTheming
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import Foundation
 @_exported import PhunwareTheming
 import Swift
@@ -10,12 +10,18 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension View {
+  @_Concurrency.MainActor @preconcurrency public func font(_ uiFont: UIFont) -> some View
+  
+}
 @objc final public class TextFieldConfiguration : NSObject {
   final public let text: TextConfiguration?
   final public let placeholder: TextConfiguration?
   final public let icon: ImageConfiguration?
   final public let background: ColorConfiguration?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(text: TextConfiguration?, placeholder: TextConfiguration?, icon: ImageConfiguration? = nil, background: ColorConfiguration? = nil)
+  #endif
   @objc deinit
 }
 extension TextFieldConfiguration {
@@ -23,11 +29,18 @@ extension TextFieldConfiguration {
     get
   }
 }
+extension TextStyles {
+  public var dynamicTypes: TextStyles {
+    get
+  }
+}
 @objc final public class ImageConfiguration : NSObject {
   final public let image: UIImage
   final public let backgroundColor: UIColor?
   final public let tintColor: UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(image: UIImage, backgroundColor: UIColor?, tintColor: UIColor?)
+  #endif
   @objc deinit
 }
 extension ImageConfiguration {
@@ -64,18 +77,21 @@ public struct ColorPalette {
   public let secondaryVariant: UIColor
   public let background: UIColor
   public let surface: UIColor
+  public let surfaceContainer: UIColor
   public let onPrimary: UIColor
   public let onSecondary: UIColor
   public let onBackground: UIColor
   public let onSurface: UIColor
   public let error: UIColor
   public let onError: UIColor
-  public init(primary: UIColor, secondary: UIColor, primaryVariant: UIColor, secondaryVariant: UIColor, background: UIColor, surface: UIColor, onPrimary: UIColor, onSecondary: UIColor, onBackground: UIColor, onSurface: UIColor, error: UIColor, onError: UIColor)
+  public init(primary: UIColor, secondary: UIColor, primaryVariant: UIColor, secondaryVariant: UIColor, background: UIColor, surface: UIColor, surfaceContainer: UIColor = .systemBackground, onPrimary: UIColor, onSecondary: UIColor, onBackground: UIColor, onSurface: UIColor, error: UIColor, onError: UIColor)
 }
 @objc final public class ColorConfiguration : NSObject {
   final public let backgroundColor: UIColor?
   final public let tintColor: UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(backgroundColor: UIColor?, tintColor: UIColor?)
+  #endif
   @objc deinit
 }
 extension ColorConfiguration {
@@ -101,7 +117,9 @@ extension Button where Label == SwiftUI.Label<SwiftUICore.Text, SwiftUICore.Imag
   final public let foregroundColor: UIColor?
   final public let backgroundColor: UIColor?
   final public let tintColor: UIColor?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(text: String?, attributedText: NSAttributedString?, font: UIFont?, foregroundColor: UIColor?, backgroundColor: UIColor?, tintColor: UIColor?)
+  #endif
   @objc deinit
 }
 extension TextConfiguration {
@@ -121,8 +139,12 @@ extension Image {
   public static func makeThemedImage(_ configuration: ImageConfiguration) -> some View
   
 }
+@available(*, deprecated, message: "This extension no longer works when using scaled fonts to support Dynamic Types.")
 extension UIFont {
   public func uppercased() -> Self
+}
+extension UIFont {
+  public func dynamicType(with textStyle: UIFont.TextStyle) -> UIFont
 }
 extension UILabel {
   @_Concurrency.MainActor @preconcurrency public func configure(_ configuration: TextConfiguration)

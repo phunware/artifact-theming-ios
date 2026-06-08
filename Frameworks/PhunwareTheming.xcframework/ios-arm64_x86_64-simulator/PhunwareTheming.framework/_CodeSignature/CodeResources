@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PhunwareTheming-Swift.h</key>
 		<data>
-		InlJ+W8a34fSuFUh3vJuadEozB4=
+		LYG5yI8EAgy++pm5cXBG8elimng=
 		</data>
 		<key>Headers/PhunwareTheming.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z64xmJOn72kJF+keFPlNy3oRVAg=
+		WDRYeTQe+EHNYJ3SSYzKgSHRIeM=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		QsZPz+qkYRqzUqSBLKZcAS74Egk=
+		a30dUIayMLFiNKASIm7rmKnI5rM=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		EYU2e3UUQ0HF5VH2e086QUE1Yf4=
+		pZKfBbobcEIFxd1Y801WCkoG4e4=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ekd5YpWa6waBPZQxnk/jZvBTEuw=
+		xepdAt/uHGskLbq4HL92p82B8BQ=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EYU2e3UUQ0HF5VH2e086QUE1Yf4=
+		pZKfBbobcEIFxd1Y801WCkoG4e4=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HAkkZr17FBj8DJlbssuKV/Fpy2U=
+		AB9sGuAeu7+sKJQ5AaoizIPBOjo=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		QsZPz+qkYRqzUqSBLKZcAS74Egk=
+		a30dUIayMLFiNKASIm7rmKnI5rM=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		joQIXhL9JpG0xtVaJMJUKnE7alA=
+		tpzB92ThCr+Ympj579utShvP/Yk=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TW2iTODMnkVZoZm5yjI4Z6BKq0s=
+		ZAU6Ccj0AoR7PghRgrzvG2WXW+g=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		joQIXhL9JpG0xtVaJMJUKnE7alA=
+		tpzB92ThCr+Ympj579utShvP/Yk=
 		</data>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l0hJ3JgmFWrB5VTBx/rvLUM6gCo=
+		GxVPqzX2ZQE1SZNa0ktrz6USIjg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kRCRa15acjyjlDbWnt+R8MlQC9RBzVh7fR7kU+6jRDY=
+			/lBS4n0u+F5QtTnx3CPFUut0lTmBWAJpN/HaLiIPIls=
 			</data>
 		</dict>
 		<key>Headers/PhunwareTheming.h</key>
@@ -85,70 +85,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEXxVAo44JeTCuK6vKQjj6gLjB1czrJGEqzqaruB31Q=
+			MxqEp7vPeZN2NC39Rd127fJ30u5YFv8SFiqoGUQIxNw=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g0AnwDfZAbWyHtsWA+PM+6I2IE4qIBsg74xj+tzWIg8=
+			g55TIZHe4qlNNzDE0gr6MmJbQHDMHoX1W2X78h/fO+I=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aer2yy5A6T/wJs3ynhxQ9zwq5yIvSjrVYYq1LP8i9gw=
+			fRdTGrYeE9/QqNhyN1am+nJ4X01I5FGiy4Pb7sRNw50=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g0AnwDfZAbWyHtsWA+PM+6I2IE4qIBsg74xj+tzWIg8=
+			g55TIZHe4qlNNzDE0gr6MmJbQHDMHoX1W2X78h/fO+I=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O0Eqlujg6dPkpnMmGUw7DVtkPo2Sr8BKP+tEl3d8iIU=
+			cLkd70EiS5cWQXkCTwJjfMRyIO53pWawpzGVYRISqyc=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DEXxVAo44JeTCuK6vKQjj6gLjB1czrJGEqzqaruB31Q=
+			MxqEp7vPeZN2NC39Rd127fJ30u5YFv8SFiqoGUQIxNw=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fiG8Ey3eHOFJoT56Nj3nKfZizeiP6gxvRT8IjEF6hxI=
+			GACQJuA/zQCujFcHVJUxa37mb4CothTqJYW6fxZWwQQ=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IQAnjS7IOoCyFqvQE+rmmktni/9cxLUtHcBTEdITxtc=
+			1lj1ejLxv99u/uJ/eyAoJKYoTNcomGQL7w5NqR+Z6bY=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fiG8Ey3eHOFJoT56Nj3nKfZizeiP6gxvRT8IjEF6hxI=
+			GACQJuA/zQCujFcHVJUxa37mb4CothTqJYW6fxZWwQQ=
 			</data>
 		</dict>
 		<key>Modules/PhunwareTheming.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ywzj6S7IBGMXJuSyzSu1T3WYnDzMtWByNLOBOKEjQ40=
+			3Mlbdba+Vz1u1qRw3ukRjs95ChUvLD3Av4hJxF6yxNc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
